@@ -1,0 +1,21 @@
+
+a{
+  text-decoration: none;
+}
+header{
+  background-color: #730000;
+  padding: 5px;
+  border-bottom: 1px solid #730000;
+}
+a{
+  color: white;
+}
+.conteiner{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+a.logo{
+  font-weight: bold;
+  padding: 1em;
+}
