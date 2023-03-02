@@ -1,5 +1,29 @@
 <ul>
-  <li *ngFor="let book of books">
-    <img src="{{book}}" alt="">
+  <h1>Фильтры</h1>
+  <div class="filter">
+    <input type="radio" id="blue" name="color" />
+    <label for="blue">Дорогие</label>
+    <input type="radio" id="red" name="color"/>
+    <label for="red">Дешёвые</label>
+    <input type="radio" id="green" name="color"/>
+    <label for="green">Популярные</label>
+
+  </div>
+  <li *ngFor ="let book of books">
+    <a >
+    <img src="{{book.imageUrl}}" alt="#">
+      <div class="content">
+        <div class="name">
+          Название:{{book.name}}
+        </div>
+        <div class="page">
+          Страниц:{{book.paged}}
+        </div>
+        <div class="genre">
+          Жанр:{{book.genre}}
+        </div>
+      </div>
+    </a>
   </li>
 </ul>
+<button class="btn btn-primary">button</button>

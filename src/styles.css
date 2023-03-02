@@ -3,6 +3,8 @@
 }
 body{
   margin: 0;
-  font-family: "Microsoft JhengHei Light";
   font-size: 18px;
+}
+html{
+  font-size: 16px;
 }
