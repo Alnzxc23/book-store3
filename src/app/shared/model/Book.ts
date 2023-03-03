@@ -4,4 +4,7 @@ export class Book{
   imageUrl!:string;
   paged!:number;
   genre!:string;
+  description!: string;
+  star!: number;
+
 }

@@ -1,0 +1,17 @@
+<header>
+  <div class="conteiner">
+    <a  routerLink="/" class="logo">{{book.name}}</a>
+  </div>
+</header>
+<div class="container">
+  <img [src]="book.imageUrl" [alt]="book.name">
+</div>
+<div class="name">
+  {{book.name}}
+</div>
+<div class="description">
+  {{book.description}}
+</div>
+<star-rating [value]="book.star" [totalstars]="5" checkedcolor="red" uncheckedcolor="black" size="24px" [readonly]="false" ></star-rating>
+<button >оставить отзыв</button>
+
