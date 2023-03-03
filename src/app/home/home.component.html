@@ -1,34 +1,31 @@
 <header>
   <div class="conteiner">
-    <a  routerLink="/" class="logo">Книги</a>
+    <a  routerLink="/" class="logo">Система рейтинга</a>
   </div>
 </header>
-<ul>
-  <h1>Фильтры</h1>
+<div class="home-page">
   <div class="filter">
-    <input type="radio" id="blue" name="color" />
-    <label for="blue">Дорогие</label>
-    <input type="radio" id="red" name="color"/>
-    <label for="red">Дешёвые</label>
-    <input type="radio" id="green" name="color"/>
-    <label for="green">Популярные</label>
-
+    <h1>Фильтры</h1>
+    <div class="elem">В алфавитном порядке</div>
+    <div class="elem">Дешёвые</div>
+    <div class="elem">Популярные</div>
   </div>
-  <li *ngFor ="let book of books">
-    <a routerLink="/book/{{book.id}}">
-    <img src="{{book.imageUrl}}" alt="#">
-      <div class="content">
-        <div class="name">
-          Название:{{book.name}}
+  <ul class="list-book">
+    <div *ngFor ="let book of books" class="card">
+      <a routerLink="/book/{{book.id}}">
+        <img src="{{book.imageUrl}}" alt="#" class="up-card">
+        <div class="content">
+          <div class="name">
+            Название:{{book.name}}
+          </div>
+          <div class="page">
+            Страниц:{{book.paged}}
+          </div>
+          <div class="genre">
+            Жанр:{{book.genre}}
+          </div>
         </div>
-        <div class="page">
-          Страниц:{{book.paged}}
-        </div>
-        <div class="genre">
-          Жанр:{{book.genre}}
-        </div>
-      </div>
-    </a>
-  </li>
-</ul>
-<button class="btn btn-primary">button</button>
+      </a>
+    </div>
+  </ul>
+</div>

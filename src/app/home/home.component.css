@@ -7,22 +7,78 @@ ul{
   padding: 0;
 }
 
-ul li a{
-  height: 20rem;
-  width: 20rem;
-  border: 1px solid whitesmoke;
-  border-radius: 1rem;
-  margin: 0.5rem;
+h1  {
+  font-size: 64px;
+  font-family: 'Lora', serif;
+}
 
+a{
+  color: white;
+  text-decoration: none;
+}
+
+ul li a{
+  border-radius: 1rem;
   flex-direction: column;
   overflow: hidden;
-  color: #e72929;
 }
 li a:hover{
   opacity: 0.9;
   cursor: pointer;
 }
-filter{
+.filter{
+  margin: 0 0 0 3%;
+  text-align: left;
+  width: 20%;
+}
+
+.elem{
+  font-size: 40px;
+  font-weight: 700;
+  color: #7A7A7A;
+  line-height: 51px;
+}
+.home-page{
+  display: flex;
+  width: 100%;
+}
+.card{
+  border: 2px;
+  background-color: #B40001;
+  border-radius: 14px;
+  margin: 2%;
+  color: white;
+}
+.content{
+  margin-top: 0;
+  align-items: center;
+  padding-left: 3%;
+  padding-bottom: 1.5%;
+  border-radius: 0 0 14px 14px;
+  background-color: #B40001;
+}
+.up-card{
+  border-radius: 14px 14px 0 0;
   margin: 0 auto;
-text-align: left;
+  height: 300px;
+  width: 275px;
+}
+.home-page{
+  width: 100%;
+}
+.list-book{
+  width: 100%;
+}
+
+.conteiner{
+  font-weight: 700;
+  font-family: Ubuntu, serif;
+  padding-left: 3%;
+  font-size: 52px;
+  background-color: #730000;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  height: 11vh;
+  align-items: center;
 }
