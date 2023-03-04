@@ -12,6 +12,6 @@
 <div class="description">
   {{book.description}}
 </div>
-<star-rating [value]="book.star" [totalstars]="5" checkedcolor="red" uncheckedcolor="black" size="24px" [readonly]="false" ></star-rating>
-<button >оставить отзыв</button>
+<star-rating [value]="book.star" [totalstars]="5" checkedcolor="red" uncheckedcolor="black" size="24px" [readonly]="true" ></star-rating>
+<button routerLink="/rate/{{book.id}}">оставить отзыв</button>
 

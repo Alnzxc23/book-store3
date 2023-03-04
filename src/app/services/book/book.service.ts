@@ -12,6 +12,7 @@ export class BookService {
     return this.getAll().find(book => book.id == id)!;
  }
   getAll(): Book[] {
+
     return [
       {
         id: 1,
@@ -20,7 +21,8 @@ export class BookService {
         paged: 345,
         genre:"Детектив",
         description:"КРУТАЯ КНИГА ПРО САМОГО УМНОГО ДЕТЕКТИВА УПОРОТЫМ МОРФИЕМ",
-        star: 5
+        star: 5,
+
       },
       {
         id: 2,

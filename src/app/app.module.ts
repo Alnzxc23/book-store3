@@ -6,21 +6,23 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { BookPageComponent } from './book-page/book-page.component';
 import {RatingModule} from "ng-starrating";
-
+import { RatepageComponent } from './ratepage/ratepage.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    BookPageComponent
+    BookPageComponent,
+    RatepageComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RatingModule
-
-
-
+    RatingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
